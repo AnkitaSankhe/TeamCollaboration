@@ -3,7 +3,7 @@
 app.controller('ForumController', ['$scope', 'ForumService', '$location', '$rootScope', '$window',
                                 function($scope, ForumService, $location, $rootScope, $window) {
 	
-	console.log("user blog controller");
+	console.log("user forum controller");
 	
 	var self = this;
     self.forum={
@@ -59,7 +59,7 @@ app.controller('ForumController', ['$scope', 'ForumService', '$location', '$root
     	  );
       	  self.forums = d;
       	  self.flag = true;
-          console.log("Fetch selected")
+          console.log("Fetch selected"+forumcmts.useremail)
       },
       function(errResponse)
       {
@@ -166,6 +166,9 @@ app.controller('ForumController', ['$scope', 'ForumService', '$location', '$root
    self.submitcomment = function(forumid)
    {
 	   	self.forumcmt.forumid = forumid;
+	   	self.forumcmt.useremail=$rootScope.currentUser.email;
+	   	self.forumcmt.id=$rootScope.currentUser.id;
+
    		self.createNewForumComment(self.forumcmt);
    		console.log("Saving new forum comment", self.forumcmt);
    };
@@ -187,7 +190,7 @@ app.controller('ForumController', ['$scope', 'ForumService', '$location', '$root
    
    self.openChildWindow = function(){
 	   alert("hi");
-	   $window.open('v_forum/frmAddComment.html','_self');
+	   $window.open('c_forum/frmAddComment.html','_self');
    };
    
    self.delforum = function(forumid){

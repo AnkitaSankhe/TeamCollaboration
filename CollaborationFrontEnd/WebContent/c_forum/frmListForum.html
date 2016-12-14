@@ -256,17 +256,18 @@ textarea {
 					&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> Posted on {{uf.createdate | date:fullDate}}
 				</p>
 				<p>
-					&nbsp;&nbsp;<span class="glyphicon glyphicon-eye-open"></span>
-					<button name="buttom" class="btn btn-primary" ng-click="ctrl.likeclick(uf.forumid)">Likes&nbsp;#&nbsp;<b>{{uf.likes}}</b></button>
+					&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>
+					<button name="buttom" class="btn btn-info" ng-click="ctrl.likeclick(uf.forumid)">Likes&nbsp;#&nbsp;<b>{{uf.likes}}</b></button>
 					&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span>
-					<button name="buttom" class="btn btn-success" ng-click="ctrl.getselected(uf.forumid)"><b>[{{uf.countcmts}}]</b>&nbsp;&nbsp;Reply(s)</button>
+					<button name="buttom" class="btn btn-info" ng-click="ctrl.getselected(uf.forumid)"><b>[{{uf.countcmts}}]</b>&nbsp;&nbsp;Reply(s)</button>
 				</p>
 				<div ng-show="ctrl.flag==true">
 					<div class="col-lg-12" ng-repeat="ufc in ctrl.forumcmts | orderBy:dateofcomments">
 						ID#&nbsp;&nbsp;{{ufc.id}} <br/>
 						<p style="color: #9A7D0A;"><b>{{ufc.comments}}</b></p>
 					<br/>
-					&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> Posted on {{ufc.dateofcomments | date:fullDate}}						<span class="glyphicon glyphicon-user"></span> By#&nbsp;&nbsp;{{ufc.useremail}}
+					&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> Posted on {{ufc.dateofcomments | date:fullDate}}					
+						<span class="glyphicon glyphicon-user"></span> By#&nbsp;&nbsp;{{ufc.useremail}}
 					<br/>
 				</div>
 				<form class="form-horizontal" name="myForm" role="form" ng-submit="ctrl.submitcomment(uf.forumid)">

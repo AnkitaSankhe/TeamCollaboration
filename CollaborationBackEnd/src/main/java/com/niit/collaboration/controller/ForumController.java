@@ -154,7 +154,7 @@ public class ForumController
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 		userforumcmt.setDateofcomments(dateFormat.format(date));
-		userforumcmt.setUseremail("mivahora@niit.com");
+		//userforumcmt.setUseremail(userforumcmt.getUseremail());
 
 		boolean flag = service.addForumComment(userforumcmt);
 		
