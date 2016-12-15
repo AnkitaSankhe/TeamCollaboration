@@ -26,6 +26,7 @@ You must have an understanding of how to install softwares.
 
 ###Eclipse Installation-
 * Steps to Install Eclipse-
+
 •	Download the Eclipse Installer windows 64bit (Recommended) or Windows 32bit, from https://eclipse.org/downloads/index.php
 
 •	Start the Eclipse Installer executable For Windows users, after the Eclipse Installer executable has finished downloading it should be available in your download directory. Start the Eclipse Installer executable. You may get a security warning to run this file. If the Eclipse Foundation is the Publisher, you are good to select Run.
@@ -45,6 +46,7 @@ Apache Maven 3.3.9 is the latest release and recommended version for all users.
 Which can be downloaded from http://maven.apache.org/download.cgi.
 
 Another way to install Maven plug-in for Eclipse:
+
 •	Open Eclipse
 
 •	Go to Help -> Eclipse Marketplace
@@ -67,7 +69,9 @@ M2: %M2_HOME%\bin
 •	Open Eclipse 
 
 click on Windows -> Preferences
+
 Choose Maven from left panel, and select installations.
+
 Click on Maven -> "User Settings" option form left panel, to check local repository location.
 
 ###Configuring Tomcat8 server into Eclipse
