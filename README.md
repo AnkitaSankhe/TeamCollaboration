@@ -25,7 +25,7 @@ You must have an understanding of how to install softwares.
 ##Installations
 
 ###Eclipse Installation-
-*Steps to Install Eclipse-
+* Steps to Install Eclipse-
 •	Download the Eclipse Installer windows 64bit (Recommended) or Windows 32bit, from https://eclipse.org/downloads/index.php
 
 •	Start the Eclipse Installer executable For Windows users, after the Eclipse Installer executable has finished downloading it should be available in your download directory. Start the Eclipse Installer executable. You may get a security warning to run this file. If the Eclipse Foundation is the Publisher, you are good to select Run.
@@ -46,29 +46,40 @@ Which can be downloaded from http://maven.apache.org/download.cgi.
 
 Another way to install Maven plug-in for Eclipse:
 •	Open Eclipse
+
 •	Go to Help -> Eclipse Marketplace
+
 •	Search by Maven
+
 •	Click "Install" button at "Maven Integration for Eclipse" section
 
 ## Configuration
 ###Configuring Maven into Eclipse
 
 •	First download maven from here(http://maven.apache.org/download.cgi) in your system
+
 •	set Maven environment variables
+
 M2_HOME: ....\apache-maven-3.0.5 \ maven installed path
 M2_Repo: D:\maven_repo \If change maven repo location
 M2: %M2_HOME%\bin
+
 •	Open Eclipse 
+
 click on Windows -> Preferences
 Choose Maven from left panel, and select installations.
 Click on Maven -> "User Settings" option form left panel, to check local repository location.
 
 ###Configuring Tomcat8 server into Eclipse
 
-*Video Url : https://www.youtube.com/watch?v=kLgquZ2FiuQ
-•		Download Tomcat 8 from https://tomcat.apache.org/download-80.cgi and place it within any local folder. 
-•		Start Eclipse and click on “Servers” tab in the workbench. Go ahead and try adding a new server. You would find option for Tomcat 8 available for selection as shown below.  
+* Video Url : https://www.youtube.com/watch?v=kLgquZ2FiuQ
+
+•		Download Tomcat 8 from https://tomcat.apache.org/download-80.cgi and place it within any local folder.
+
+•		Start Eclipse and click on “Servers” tab in the workbench. Go ahead and try adding a new server. You would find option for Tomcat 8 available for selection as shown below.
+
 •		After clicking Finish, you would see a new server added with the name as “Tomcat v8.0 Server at localhost”. Start the server.
+
 •		Check http://localhost:8080 (provided you installed Tomcat 8 and set Http port as 8080)
 
 
