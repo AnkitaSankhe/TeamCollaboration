@@ -19,12 +19,12 @@ Apache Tomcat 8.0
 Oracle 11.2.0
 Java Development Kit version 8
 
-###Prerequisites
+##Prerequisites
 You must have an understanding of how to install softwares. 
 
-####Installations
+##Installations
 
-Eclipse Installation-
+###Eclipse Installation-
 Steps to Install Eclipse
 •	For this project we will be installing the Eclipse Mars/Neon release, we are introducing a new Eclipse installer. This is a new and more efficient way to install Eclipse. It is a proper installer, so no more zip files, with a self extracting download that will lead you through the installation experience. For those not into installers, we still have the packages and zip files available on our download pages.
 
@@ -39,7 +39,7 @@ Steps to Install Eclipse
 
 Installation Video: https://www.youtube.com/watch?v=35NUuhmQuB4
 
-Maven Installation-
+###Maven Installation-
 
 Maven is a Java tool, so you must have Java installed in order to proceed.
 Downloading Apache Maven 3.3.9
@@ -51,8 +51,8 @@ Another way to install Maven plug-in for Eclipse:
 3.Search by Maven
 4.Click "Install" button at "Maven Integration for Eclipse" section
 
-##### Configuration
-Configuring Maven into Eclipse
+## Configuration
+###Configuring Maven into Eclipse
 
 First install maven(Steps given in ####Installations) in your system and set Maven environment variables
 M2_HOME: ....\apache-maven-3.0.5 \ maven installed path
@@ -69,7 +69,7 @@ Open Eclipse and click on Windows -> Preferences
 Choose Maven from left panel, and select installations.
 Click on Maven -> "User Settings" option form left panel, to check local repository location.
 
-Configuring Tomcat8 server into Eclipse
+###Configuring Tomcat8 server into Eclipse
 
 Video Url : https://www.youtube.com/watch?v=kLgquZ2FiuQ
 •	Download Tomcat 8 from https://tomcat.apache.org/download-80.cgi and place it within any local folder. 
