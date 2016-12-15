@@ -147,7 +147,7 @@ public class ForumController
 	}	
 	
 	@RequestMapping(value = "/adduserforumcmt/", method = RequestMethod.POST)
-	public ResponseEntity<UserForumComments> createUserForumComment(@RequestBody UserForumComments userforumcmt)
+	public ResponseEntity<UserForumComments> createUserForumComment(@RequestBody UserForumComments userforumcmt, HttpSession session)
 	{
 		log.debug("calling => createUserForumComment() method");
 		
