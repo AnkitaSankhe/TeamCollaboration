@@ -8,15 +8,25 @@ The Frontend Project is an Angular Aplication(Dynamic Web Project) and Backend P
 
 ##Technologies Used
 HTML 5
+
 CSS
+
 JavaScript
+
 Bootstrap 3.3.7
+
 AngularJs 1.5
+
 Maven 4.0.0
+
 Spring 4.3.0
+
 Hibernate 4.3.5
+
 Apache Tomcat 8.0
+
 Oracle 11.2.0
+
 Java Development Kit version 8
 
 ##Prerequisites
